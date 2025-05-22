@@ -37,7 +37,7 @@ using namespace i2p::transport;
 std::string capsToString(uint8_t caps) {
     // 将caps翻译为对应的字符串
 	// U: 不可达
-	// H: 隐藏
+	// H: 隐藏   
 	// R：可达
 	// P：>256KBps
 	// N：<=256KBps and >48KBps
@@ -242,7 +242,7 @@ namespace data
 			m_Requests.Stop ();
 		}
 	}
-
+               
 	void NetDb::Run ()
 	{
 		i2p::util::SetThreadName("NetDB");

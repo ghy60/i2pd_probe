@@ -138,7 +138,8 @@ class DarknetDB:
                         "SSU_ipv4_port=VALUES(SSU_ipv4_port), "
                         "SSU_ipv6=VALUES(SSU_ipv6), "
                         "SSU_ipv6_port=VALUES(SSU_ipv6_port)")
-
+    
+     
         # 执行插入操作
         self.cursor.execute(insert_query, routerinfo_dic)
         self.conn.commit()

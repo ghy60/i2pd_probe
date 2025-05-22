@@ -62,7 +62,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         context: ./contrib/docker
-        file: ./contrib/docker/Dockerfile
+        file: ./contrib/docker/
         platforms: ${{ matrix.platform }}
         push: true
         tags: |

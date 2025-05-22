@@ -1,0 +1,2 @@
+[2025-04-22 01:25:00,815] INFO [LocalLog partition=darknet-1, dir=/tmp/kafka-logs] Rolled new log segment at offset 20846967 in 160 ms. (kafka.log.LocalLog)
+[2025-04-22 01:25:01,256] INFO [ProducerStateManager partition=darknet-1] Wrote producer snapshot at offset 20846967 with 0 producer ids in 31 ms. (org.apache.kafka.storage.internals.log.ProducerStateManager)

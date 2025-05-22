@@ -1,0 +1,3 @@
+[2025-02-24 16:36:07,569] INFO Unable to read additional data from client, it probably closed the socket: address = /206.168.34.60:41906, session = 0x0 (org.apache.zookeeper.server.NIOServerCnxn)
+[2025-02-24 16:36:08,725] INFO Unable to read additional data from client, it probably closed the socket: address = /206.168.34.60:41918, session = 0x0 (org.apache.zookeeper.server.NIOServerCnxn)
+[2025-02-24 16:36:10,412] INFO Unable to read additional data from client, it probably closed the socket: address = /206.168.34.60:52944, session = 0x0 (org.apache.zookeeper.server.NIOServerCnxn)

@@ -60,8 +60,8 @@ public:
 };
 
 
-class HashPartitionerCb : public RdKafka::PartitionerCb
-{
+class HashPartitionerCb : public RdKafka::PartitionerCb   //用于实现自定义的分区策略，通过对消息键进行哈希计算来决定消息的分区
+{ 
 public:
 	int32_t partitioner_cb(const RdKafka::Topic *topic, const std::string *key,
 		int32_t partition_cnt, void *msg_opaque)

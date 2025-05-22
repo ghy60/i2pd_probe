@@ -6,6 +6,7 @@ from push_mysql import DarknetDB
 from kafka_cusumer import KafkaConsumerHandler
 from del_lease import del_action
 from get_log import logger
+import logging
 
 class MissingConfigError(Exception):
     """自定义异常类，用于表示缺少配置项的错误"""
@@ -13,7 +14,7 @@ class MissingConfigError(Exception):
 
 
 def action(config_dic):
-    executable_path = "/app/build/i2pd"       # 识别本地路径，去进行识别
+    executable_path = "/root/i2pd_tance/build/i2pd"       # 识别本地路径，去进行识别
     ntcp2_port = config_dic["ntcp2_port"]
     web_port = config_dic["web_port"]
     # log_file = config_dic["log_file"]
@@ -43,9 +44,9 @@ def action(config_dic):
             raise subprocess.CalledProcessError(return_code, process.args, output=stdout, stderr=stderr)
     
     except subprocess.CalledProcessError as e:
-        logger.error("执行过程中出现错误:", e)
+        logger.error("执行过程中出现错误:%s", e)
     except FileNotFoundError as e:
-        logger.error("找不到可执行文件:", e)
+        logger.error("找不到可执行文件:%s", e)
 
 def run_action(config):
     mysql_server = config["mysql"]["servers"]
@@ -141,4 +142,4 @@ if __name__ == "__main__":
     try:
         run_action(config)
     except MissingConfigError as e:
-        logger.error("配置文件中缺少配置项错误:", e)
+        logger.error("配置文件中缺少配置项错误:%s", e)

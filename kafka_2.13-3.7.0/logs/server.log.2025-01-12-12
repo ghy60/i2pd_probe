@@ -1,0 +1,3 @@
+[2025-01-12 12:50:32,855] INFO [GroupCoordinator 0]: Member rdkafka-19130db8-8745-4758-b717-0a92b114e9bc in group 90 has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2025-01-12 12:50:32,882] INFO [GroupCoordinator 0]: Preparing to rebalance group 90 in state PreparingRebalance with old generation 16 (__consumer_offsets-15) (reason: removing member rdkafka-19130db8-8745-4758-b717-0a92b114e9bc on heartbeat expiration) (kafka.coordinator.group.GroupCoordinator)
+[2025-01-12 12:50:32,893] INFO [GroupCoordinator 0]: Group 90 with generation 17 is now empty (__consumer_offsets-15) (kafka.coordinator.group.GroupCoordinator)

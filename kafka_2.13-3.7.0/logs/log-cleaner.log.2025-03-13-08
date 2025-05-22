@@ -1,0 +1,18 @@
+[2025-03-13 08:24:10,473] INFO Cleaner 0: Beginning cleaning of log __consumer_offsets-15 (kafka.log.LogCleaner)
+[2025-03-13 08:24:10,483] INFO Cleaner 0: Building offset map for __consumer_offsets-15... (kafka.log.LogCleaner)
+[2025-03-13 08:24:18,338] INFO Cleaner 0: Building offset map for log __consumer_offsets-15 for 1 segments in offset range [603699, 655148). (kafka.log.LogCleaner)
+[2025-03-13 08:24:18,801] INFO Cleaner 0: Offset map for log __consumer_offsets-15 complete. (kafka.log.LogCleaner)
+[2025-03-13 08:24:18,890] INFO Cleaner 0: Cleaning log __consumer_offsets-15 (cleaning prior to Sun Mar 09 22:08:34 UTC 2025, discarding tombstones prior to upper bound deletion horizon Mon Mar 03 01:25:33 UTC 2025)... (kafka.log.LogCleaner)
+[2025-03-13 08:24:18,913] INFO Cleaner 0: Cleaning LogSegment(baseOffset=0, size=217, lastModifiedTime=1741051533050, largestRecordTimestamp=1741051533049) in log __consumer_offsets-15 into 0 with an upper bound deletion horizon 1740965133050 computed from the segment last modified time of 1741051533050,retaining deletes. (kafka.log.LogCleaner)
+[2025-03-13 08:24:18,932] INFO Cleaner 0: Cleaning LogSegment(baseOffset=603699, size=5711444, lastModifiedTime=1741558114482, largestRecordTimestamp=1741558114486) in log __consumer_offsets-15 into 0 with an upper bound deletion horizon 1740965133050 computed from the segment last modified time of 1741558114482,retaining deletes. (kafka.log.LogCleaner)
+[2025-03-13 08:24:19,471] INFO Cleaner 0: Swapping in cleaned segment LogSegment(baseOffset=0, size=427, lastModifiedTime=1741558114482, largestRecordTimestamp=1741558114486) for segment(s) List(LogSegment(baseOffset=0, size=217, lastModifiedTime=1741051533050, largestRecordTimestamp=1741051533049), LogSegment(baseOffset=603699, size=5711444, lastModifiedTime=1741558114482, largestRecordTimestamp=1741558114486)) in log Log(dir=/tmp/kafka-logs/__consumer_offsets-15, topicId=j3qbZvIJT867mAqdfYfcGg, topic=__consumer_offsets, partition=15, highWatermark=655153, lastStableOffset=655153, logStartOffset=0, logEndOffset=655153) (kafka.log.LogCleaner)
+[2025-03-13 08:24:19,505] INFO [kafka-log-cleaner-thread-0]: 
+	Log cleaner thread 0 cleaned log __consumer_offsets-15 (dirty section = [603699, 655148])
+	5.4 MB of log processed in 9.0 seconds (0.6 MB/sec).
+	Indexed 5.4 MB in 8.3 seconds (0.7 Mb/sec, 92.3% of total time)
+	Buffer utilization: 0.0%
+	Cleaned 5.4 MB in 0.7 seconds (7.9 Mb/sec, 7.7% of total time)
+	Start size: 5.4 MB (51,451 messages)
+	End size: 0.0 MB (2 messages)
+	100.0% size reduction (100.0% fewer messages)
+ (kafka.log.LogCleaner)

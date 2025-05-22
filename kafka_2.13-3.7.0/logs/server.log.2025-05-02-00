@@ -1,0 +1,7 @@
+[2025-05-02 06:25:44,297] INFO [UnifiedLog partition=darknet-1, dir=/tmp/kafka-logs] Deleting segment LogSegment(baseOffset=28168514, size=1073741585, lastModifiedTime=1745562293092, largestRecordTimestamp=1745562293091) due to log retention time 604800000ms breach based on the largest record timestamp in the segment (kafka.log.UnifiedLog)
+[2025-05-02 06:25:44,298] INFO [UnifiedLog partition=darknet-1, dir=/tmp/kafka-logs] Incremented log start offset to 31892823 due to segment deletion (kafka.log.UnifiedLog)
+[2025-05-02 06:26:44,299] INFO [LocalLog partition=darknet-1, dir=/tmp/kafka-logs] Deleting segment files LogSegment(baseOffset=28168514, size=1073741585, lastModifiedTime=1745562293092, largestRecordTimestamp=1745562293091) (kafka.log.LocalLog$)
+[2025-05-02 06:26:44,299] INFO Deleted producer state snapshot /tmp/kafka-logs/darknet-1/00000000000028168514.snapshot.deleted (org.apache.kafka.storage.internals.log.SnapshotFile)
+[2025-05-02 06:26:44,403] INFO Deleted log /tmp/kafka-logs/darknet-1/00000000000028168514.log.deleted. (org.apache.kafka.storage.internals.log.LogSegment)
+[2025-05-02 06:26:44,404] INFO Deleted offset index /tmp/kafka-logs/darknet-1/00000000000028168514.index.deleted. (org.apache.kafka.storage.internals.log.LogSegment)
+[2025-05-02 06:26:44,404] INFO Deleted time index /tmp/kafka-logs/darknet-1/00000000000028168514.timeindex.deleted. (org.apache.kafka.storage.internals.log.LogSegment)

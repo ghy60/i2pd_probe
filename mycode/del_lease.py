@@ -17,4 +17,4 @@ def del_action():
     while(True):
         with lock:
             mysql_db.delete_expired_rows()
-        time.sleep(int(config["mysql"]["gap_time_second"]))
+        time.sleep(int(config["mysql"]["gap_time_second"]))  # 每秒执行一次，删除过期行，防止内存泄漏

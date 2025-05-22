@@ -41,7 +41,7 @@ RUN pip3 install --no-cache-dir -r mycode/requirements.txt
 # RUN nohup kafka_2.13-3.7.0/bin/kafka-server-start.sh kafka_2.13-3.7.0/config/server.properties > /dev/null 2>&1 &
 # RUN nohup kafka_2.13-3.7.0/bin/kafka-topics.sh --create --topic darknet --bootstrap-server localhost:9092 > /dev/null 2>&1 &
 
-RUN cd build; make
+RUN cd build;cmake .; make
 
 # 设置vim为默认编辑器
 RUN cd mycode
